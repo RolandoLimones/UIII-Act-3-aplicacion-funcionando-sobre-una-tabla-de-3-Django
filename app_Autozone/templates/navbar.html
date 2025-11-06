@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg" style="background: var(--primary);">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="{% url 'inicio_autozone' %}">
+        <i class="bi bi-gear-wide-connected"></i> Sistema de Administración Autozone
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="{% url 'inicio_autozone' %}"><i class="bi bi-house"></i> Inicio</a></li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-box-seam"></i> Proveedores
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="{% url 'agregar_proveedor' %}">Agregar Proveedor</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_proveedores' %}">Ver Proveedores</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_proveedores' %}">Actualizar Proveedor</a></li>
+              <li><a class="dropdown-item" href="{% url 'ver_proveedores' %}">Borrar Proveedor</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-building"></i> Sucursales
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Agregar sucursales</a></li>
+              <li><a class="dropdown-item" href="#">Ver sucursales</a></li>
+              <li><a class="dropdown-item" href="#">Actualizar sucursales</a></li>
+              <li><a class="dropdown-item" href="#">Borrar sucursales</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-archive"></i> Almacenes
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Agregar almacenes</a></li>
+              <li><a class="dropdown-item" href="#">Ver almacenes</a></li>
+              <li><a class="dropdown-item" href="#">Actualizar almacenes</a></li>
+              <li><a class="dropdown-item" href="#">Borrar almacenes</a></li>
+            </ul>
+          </li>
+  
+        </ul>
+      </div>
+    </div>
+  </nav>
